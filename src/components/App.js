@@ -36,13 +36,13 @@ const App = () => {
   // let {name,country} = cityList;
   return (
     <div id="main">
-      {cityList.map((item, index) => {
+      <ol> {cityList.map((item, index) => {
         return item.country === "India" ? (
-          <li key={`location${index}`}>{item.name}</li>
+          <li key={`location${index + 1}`}>{item.name}</li>
         ) : (
           ""
         );
-      })}
+      })}</ol>
     </div>
   );
 };
